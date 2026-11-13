@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam Practice Studio</title>
+  <!-- KaTeX CSS bundled locally by Vite (offline-friendly) -->
+  <link rel="stylesheet" href="/src/styles/original.css" />
+  <link rel="stylesheet" href="/src/styles/app.css" />
+</head>
+<body>
+  <!-- App shell. Screens are swapped in #app-root by navigation.js -->
+  <div id="app-root"></div>
+
+  <!-- Floating controls reused from the original HTML interface -->
+  <button id="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">&#9790;</button>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&uarr;</button>
+
+  <!-- App entry. KaTeX (CSS + JS + auto-render) is imported from main.js so
+       Vite bundles it locally; no CDN calls at runtime. -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
